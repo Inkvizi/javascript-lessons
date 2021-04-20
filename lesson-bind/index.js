@@ -10,8 +10,8 @@ let people1 = {
 
 let getAge = people1.getAge;
 
-console.log(getAge()); //выведется 10
+console.log(getAge(1980)); //выведется 1990
 
-let boundGetCurrentYear = (objectForBind, functionForBind, ...args) => (functionForBind.apply(objectForBind, args));
+let myBind = (objectForBind, functionForBind, ...args) => (functionForBind.apply(objectForBind, args));
 
-console.log(boundGetCurrentYear(people1, getAge, 1980)); //выведется 2002
+console.log(myBind(people1, getAge, 1980)); //выведется 2002
