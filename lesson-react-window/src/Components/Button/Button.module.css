@@ -1,12 +1,11 @@
 ._{
     display: flex;
     border: 1px solid green;
-    width: 30%;
+    width: 100%;
 }
 
 .button {
     display: flex;
-    justify-content: center;
     width: 100%;
     border: none;
     background-color: #04AA6D;

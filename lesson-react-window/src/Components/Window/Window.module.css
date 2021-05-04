@@ -1,7 +1,8 @@
 ._ {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex;    
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
     width: 40%;
     height: 40%;
     border: 1px solid purple;
@@ -15,11 +16,15 @@
     justify-content: center;
 }
 
-.bottomGroup {
+.button {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 10%;
-    border: 1px solid red;
-    padding: 1em 1em 1em 1em;
-}
+    border: none;
+    width: 30%;
+  }
+
+.jokeButton {
+    composes: button;
+    position: absolute;
+    left: 287px;
+    top: 297px;
+  }
