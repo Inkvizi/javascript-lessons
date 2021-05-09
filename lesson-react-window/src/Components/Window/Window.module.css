@@ -1,0 +1,29 @@
+._ {
+    display: flex;    
+    flex-wrap: wrap;
+    align-content: space-between;
+    position: relative;
+    width: 40%;
+    height: 40%;
+    border: 1px solid purple;
+    padding: 1em 1em 1em 1em;
+}
+
+.label {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    border: none;
+    width: 30%;
+  }
+
+.jokeButton {
+    composes: button;
+    position: absolute;
+    left: 287px;
+    top: 297px;
+  }
